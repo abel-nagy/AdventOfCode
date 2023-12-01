@@ -1,5 +1,3 @@
-import * as fs from "fs";
-
 export class Trebuchet {
 	exampleInput = "1abc2\npqr3stu8vwx\na1b2c3d4e5f\ntreb7uchet";
 	inputPath = "src/2023/Day 1/input.txt";
@@ -21,9 +19,5 @@ export class Trebuchet {
 			.reduce((a, b) => a + b);
 
 		console.log(sum);
-	}
-
-	importInputFile() {
-		return fs.readFileSync(this.inputPath, "utf-8");
 	}
 }
